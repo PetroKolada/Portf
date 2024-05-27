@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: unset;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(92, 92, 224);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px 0px rgba(32, 20, 136, 0.75);
+}
+
+.page_turn_holder {
+    display: flex;
+    min-width: 30%;
+    width: fit-content;
+}
+
+.pages_holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+
+}
+
+.page__element {
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.page__devider {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-image: linear-gradient(to right, rgb(92, 92, 224) 50%, rgb(0, 0, 0) 0%);
+    background-position: bottom;
+    background-size: 4px 3px;
+    background-repeat: repeat-x;
+    display: block;
+    top: 50%;
+    left: calc(100%);
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+.turn__button {
+    height: fit-content;
+    display: flex;
+}
+
+.turn__button img {
+    height: 25px;
+}
+
+.turn__button:last-child {
+    transform: scaleX(-1);
+}
+
+.name {
+    color: yellow;
+    font-size: 75px;
+    text-shadow: -10px 6px rgba(0, 0, 0, 0.144);
+}
+
+.hero_text_holder {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
+}
+
+.current {
+    border: 10px solid black;
+    width: 30px;
+}
