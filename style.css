@@ -16,11 +16,11 @@ body {
 }
 
 main {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
     background-color: rgb(92, 92, 224);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 header {
@@ -38,6 +38,7 @@ header {
     display: flex;
     min-width: 30%;
     width: fit-content;
+    align-items: center;
 }
 
 .pages_holder {
@@ -54,6 +55,7 @@ header {
     aspect-ratio: 1/1;
     width: 20px;
     border-radius: 50%;
+    transition: all 0.2s ease-in-out;
 }
 
 .page__devider {
@@ -71,16 +73,18 @@ header {
 
 .hero {
     height: 100%;
-    width: 100%;
+    min-width: 100vw;
     padding: 80px;
     display: flex;
     flex-direction: column-reverse;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .turn__button {
     height: fit-content;
     display: flex;
+    cursor: pointer;
 }
 
 .turn__button img {
@@ -108,9 +112,32 @@ header {
 .description {
     font-size: 18px;
     color: black;
+    height: 100%;
 }
 
 .current {
     border: 10px solid black;
     width: 30px;
+}
+
+.main_holder {
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.cards_holder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.work_card {
+    height: fit-content;
+    min-height: 50%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 25px 0px rgba(32, 20, 136, 0.75);
 }
